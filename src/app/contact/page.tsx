@@ -49,30 +49,30 @@ export default function Contact() {
                         opacity: 1,
                         y: 0,
                         transition: {
-                            staggerChildren: 0.2, // Stagger each form field
+                            staggerChildren: 0.2, 
                         },
                     },
                 }}
             >
-                {/* Name Field */}
+                
                 <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="mb-4">
                     <label htmlFor="name" className="block text-md font-bold mb-2 text-white">Name</label>
                     <input type="text" id="name" className="w-full p-2 border border-gray-300 rounded" required />
                 </motion.div>
 
-                {/* Email Field */}
+                
                 <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="mb-4">
                     <label htmlFor="email" className="block text-md font-bold mb-2 text-white">Email</label>
                     <input type="email" id="email" className="w-full p-2 border border-gray-300 rounded" required />
                 </motion.div>
 
-                {/* Message  */}
+    
                 <motion.div variants={{ hidden: { opacity: 0, y: 20 }, visible: { opacity: 1, y: 0 } }} className="mb-4">
                     <label htmlFor="message" className="block text-md font-bold mb-2 text-white">Message</label>
                     <textarea id="message" className="w-full p-2 border border-gray-300 rounded" required></textarea>
                 </motion.div>
 
-                {/* Submit Button with Hover Animation */}
+                
                 <motion.button
                     
 
@@ -86,7 +86,7 @@ export default function Contact() {
                 </motion.button>
             </motion.form>
 
-            {/* Contact Info */}
+            
             <motion.div
                 className="text-center mt-6 text-pink-950"
                 initial={{ opacity: 0 }}
@@ -100,7 +100,7 @@ export default function Contact() {
                
 
 
-{/* Icons Section */}
+
 <div className="flex justify-center space-x-4 mt-6 ">
     <motion.a
         href="/"

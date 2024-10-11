@@ -7,7 +7,7 @@ import { faSearch, faShoppingCart, faHeart, faUser, faBars, faTimes } from '@for
 export default function Header() {
   const [menuOpen, setMenuOpen] = useState(false);
 
-  // Toggle the menu open/close
+  
   const toggleMenu = () => {
     setMenuOpen(!menuOpen);
   };
@@ -15,14 +15,14 @@ export default function Header() {
   return (
     <header className="bg-pink-200 text-black">
       <div className="flex justify-between items-center px-4 py-3 md:py-4">
-        {/* Logo Section */}
+        
         <div className="flex items-center">
           <h1 className="text-2xl sm:text-3xl font-serif font-bold text-pink-800">
             Furniro<span className="text-black font-bold">.</span>
           </h1>
         </div>
 
-        {/* Desktop Navigation Links */}
+        
         <nav className="hidden md:flex text-lg font-medium space-x-6">
           <ul className="flex gap-8">
             <li>
@@ -43,7 +43,7 @@ export default function Header() {
           </ul>
         </nav>
 
-        {/* Icons Section */}
+        
         <div className="flex gap-6 sm:gap-8 items-center">
           <FontAwesomeIcon className="text-gray-950 text-xl cursor-pointer hover:text-pink-800 transition-colors duration-300" icon={faSearch} />
           <FontAwesomeIcon className="text-gray-950 text-xl cursor-pointer hover:text-pink-800 transition-colors duration-300" icon={faHeart} />
@@ -51,19 +51,19 @@ export default function Header() {
           <FontAwesomeIcon className="text-gray-950 text-xl cursor-pointer hover:text-pink-800 transition-colors duration-300" icon={faUser} />
         </div>
 
-        {/* Hamburger Menu Icon */}
+        
         <div className="md:hidden flex items-center">
           <button onClick={toggleMenu} className="text-gray-950 text-2xl focus:outline-none">
             {menuOpen ? (
-              <FontAwesomeIcon icon={faTimes} /> // X icon for closing
+              <FontAwesomeIcon icon={faTimes} /> 
             ) : (
-              <FontAwesomeIcon icon={faBars} />  // Hamburger menu icon
+              <FontAwesomeIcon icon={faBars} />  
             )}
           </button>
         </div>
       </div>
 
-      {/* Mobile Navigation Menu */}
+      
       {menuOpen && (
         <nav className="md:hidden bg-pink-200">
           <ul className="flex flex-col space-y-4 px-4 py-4">

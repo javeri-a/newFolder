@@ -6,11 +6,11 @@ export default function Products(){
  
 
   
-  // Simulating random prices
+
   const generateRandomPrice = () => (Math.random() * (100 - 10) + 10).toFixed(2);
   
   
-    // Images data
+    
     const images = [
       { id: 1, src: "/image1.png", description: "Beautiful Chair" },
       { id: 2, src: "/image2.png", description: "Elegant Sofa" },
@@ -28,7 +28,7 @@ export default function Products(){
       <div className="grid grid-cols-2 md:grid-cols-4 gap-8 p-8">
         {images.map((image) => (
           <div key={image.id} className="relative group">
-            {/* Image Section */}
+        
             <div className="overflow-hidden rounded-lg">
               <Image
                 src={image.src}
@@ -37,7 +37,7 @@ export default function Products(){
                 height={400}
                 className="transition-transform duration-300 ease-in-out transform group-hover:scale-110"
               />
-              {/* Hover effect: transparent overlay */}
+              
               <div className="absolute inset-0 bg-black bg-opacity-50 flex items-center justify-center opacity-0 group-hover:opacity-100 transition-opacity duration-300">
                 <div className="space-y-4 text-white text-center">
                   <button className="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-lg">
@@ -57,7 +57,7 @@ export default function Products(){
                 </div>
               </div>
             </div>
-            {/* Price and Description */}
+            
             <div className="text-center mt-4">
               <p className="text-lg font-bold">${generateRandomPrice()}</p>
               <p className="text-gray-600">{image.description}</p>

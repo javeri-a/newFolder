@@ -4,15 +4,15 @@ import Image from "next/image";
 export default function Browse() {
   return (
     <div className="py-12">
-      {/* Header Section */}
+      
       <div className="text-center mb-12">
         <h1 className="text-3xl font-bold">Browse the Range</h1>
         <p className="text-gray-600">Discover our exquisite collection of furniture.</p>
       </div>
 
-      {/* Grid Section */}
+      
       <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 px-8">
-        {/* First Item */}
+    
         <Link href="/product/1">
           <div className="cursor-pointer group">
             <div className="overflow-hidden rounded-lg shadow-lg transition-transform transform group-hover:scale-105">
@@ -28,7 +28,7 @@ export default function Browse() {
           </div>
         </Link>
 
-        {/* Second Item */}
+        
         <Link href="/product/2">
           <div className="cursor-pointer group">
             <div className="overflow-hidden rounded-lg shadow-lg transition-transform transform group-hover:scale-105">
@@ -44,7 +44,7 @@ export default function Browse() {
           </div>
         </Link>
 
-        {/* Third Item */}
+        
         <Link href="/product/3">
           <div className="cursor-pointer group">
             <div className="overflow-hidden rounded-lg shadow-lg transition-transform transform group-hover:scale-105">
